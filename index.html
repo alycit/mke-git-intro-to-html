@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>GIT MKE - Intro to HTML and CSS</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="An introduction to HTML and CSS for Girls in Tech Milwaukee">
+		<meta name="author" content="Lucas Willett">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -31,6 +31,14 @@
 			}
 		</script>
 
+    <style>
+      strong  { font-weight: normal; color: orange; font-variant: normal; }
+      .breakout { color: orange; }
+      .reveal a:not(.image) { color: orange; }
+      .reveal pre {box-shadow:none;}
+      .reveal code { border: 4px solid white; }
+    </style>
+
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -40,27 +48,119 @@
 
 		<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>HTML Presentations Made Easy</h3>
+					<h1>Intro to HTML &amp; CSS</h1>
+					<h3>The web is waiting.</h3>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>Brought to you by <a href="http://www.meetup.com/Girls-in-Tech-Milwaukee/">Girls in Tech Milwaukee</a> and <a href="http://devbootcamp.com">Dev Bootcamp</a></small>
 					</p>
+				</section>
+
+        <!-- Intro / Outline -->
+        <section>
+          <h2>Hi everyone!</h2>
+          <p>Some "rules" for today:</p>
+          <ul>
+            <li>We are here to support your learning!</li>
+            <li>Ask <strong>every single question</strong> you have.</li>
+            <li>Take advantage of the amazing person next to you!</li>
+            <li>If you want to do it, <strong>do it</strong>. Have fun with this.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Welcome!</h2>
+          <p>Let's get to know each other!</p>
+          <ul>
+            <li>What's your name, and who are you?</li>
+            <li>What do you want to get out of this session?</li>
+            <li>What's <strong>something quirky</strong> about you?</li>
+          </ul>
+        </section>
+
+				<section>
+					<h2>Outline</h2>
+					<ul>
+						<li>What are HTML and CSS?</li>
+						<li>Exploration of an HTML element</li>
+						<li>Common HTML elements</li>
+						<li class="breakout">Breakout - Build a site</li>
+						<li>Explanation of CSS</li>
+						<li class="breakout">Breakout - Improve your site</li>
+						<li>Positioning with CSS</li>
+						<li class="breakout">Breakout - Make your site truly awesome</li>
+					</ul>
+				</section>
+
+        <!-- HTML and CSS and the role they play in the web (5min) -->
+				<section>
+					<h2>HTML and CSS: Together at Last</h2>
 				</section>
 
 				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.
-					</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
+					<h2>What is HTML?</h2>
+          <p>HTML is the coding language that lets us <strong>build websites</strong> and create its content.</p>
+          <img src="img/devbootcamp.jpg"/>
 				</section>
+
+				<section>
+					<h2>What is HTML?</h2>
+          <p>You can right-click and press <strong>View Source</strong> on any webpage to see this code.</p>
+          <img src="img/devbootsource.png"/>
+				</section>
+
+				<section>
+					<h2>Why use HTML?</h2>
+          <p>It was invented as a language to share scientific papers between universities.</p>
+          <p>Primarily used in academic papers for <strong>layout</strong> and <strong>providing links</strong> to other papers.</p>
+				</section>
+
+				<section>
+					<h2>Why use HTML?</h2>
+          <p>This method of describing a <strong>bunch of information</strong> linked to other bunches of information clearly proved useful, as it shaped the Internet into what it is today.</p>
+				</section>
+
+				<section>
+					<h2>Why use HTML?</h2>
+          <p><strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage<br />
+          is a format for describing your document and links to other documents available on the web.</p>
+          <p>It provides the structure for your website's content.</p>
+				</section>
+
+        <section>
+          <h2>My website?</h2>
+          <div>Your Content</div>
+          <div><span class="breakout">+ HTML </span>(Structure)</div>
+          <div><span class="breakout">+ CSS </span>(Presentation)</div>
+          <div class="breakout">= Your Website</div>
+          <p>A website is a way to present your content to the world, using HTML and CSS to present that content &amp; make it look good.</p>
+        </section>
+
+        <section>
+          <h2>Breaking It Down</h2>
+          <ul>
+            <li></li>
+            <li>
+            </li>
+          </ul>
+          <pre>
+            <code class="html">
+    <p>Your content will go here.</p>
+            </code>
+          </pre>
+        </section>
+
+        <!-- A breakdown of an HTML element &#45; tag, attr value (5min) -->
+        <!-- Examples of some common HTML elements (5min) -->
+        <!-- The idea of implicit styling by a browser (5min) -->
+        <!-- DEMO : Build a website using only tags (20min) -->
+        <!-- A breakdown of CSS &#45; selector, property, value (10min) -->
+        <!-- A quick demo of positioning (10min) -->
+        <!-- A quick demo of parent and hierarchical property inheritance (5min) -->
+        <!-- Examples of some common CSS properties and values (5min) -->
+        <!-- DEMO : Either change your website with colors and images, or play with a prebuilt site (30 min) -->
+
 
 				<!-- Example of nested vertical slides -->
 				<section>
